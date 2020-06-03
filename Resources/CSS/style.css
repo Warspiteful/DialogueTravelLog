@@ -1,0 +1,52 @@
+
+body {
+    margin: 0;
+    background-color: beige;
+  }
+
+  header {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+.Banner{
+    margin: 0;
+    width:100%;
+    position: relative;
+    background: url("../Images/Hill.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 100px 0px;
+
+}
+
+
+
+.Banner::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255,255,255,.4);
+    
+  }
+
+  .Banner h1, .Banner h2{
+    color:black;
+    opacity: 1;  
+  text-align: center;
+  position: relative;
+}
+
+  
+  body{
+        text-align: center;
+        background-color: burlywood;
+
+  }
+
+a{
+  text-decoration: none;
+}
