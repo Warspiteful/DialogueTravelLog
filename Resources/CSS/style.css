@@ -46,7 +46,31 @@ body {
         background-color: burlywood;
 
   }
+  ol{
 
+    display: inline-block;
+  }
 a{
   text-decoration: none;
+}
+
+.start, .side{
+  width: 10%;
+  padding-left: 5%;
+  display: inline-block;
+}
+
+.side{
+  height:40%;
+}
+
+.start{
+  vertical-align:top;
+}
+.entry{
+  display: inline-block;
+  vertical-align:top;
+  width: 25%;
+  padding-left: 5%;
+  min-width: 10%;
 }
