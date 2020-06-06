@@ -114,6 +114,15 @@ a{
   background-color: darksalmon;
 }
 
+.day4{
+  background-color: gainsboro;
+}
 iframe{
   margin: 0 auto;
+}
+
+footer{
+  margin: 1% 0 0 0;
+  padding: 2% 0;
+  background-color: black;
 }
