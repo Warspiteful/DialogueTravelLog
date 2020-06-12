@@ -41,10 +41,41 @@
         <h2 >Day 5 - 6/13/20</h2>
         <p class = "entry"></p>
     </div>
-    <ol>
-   
+
+    <h2>"The Almighty indeed sent the potato blight, but the English created the Famine." - John Mitchell</h2>
+    <h2>"It was a good fight anyhow." - Michael Joseph O'Rahilly</h2>
+    <h2>“Tír gan teanga, tír gan anam.” ("A country without a language is a country without a soul”) - Pádraig Pearse</h2>
 
     <h3>Gallery</h3>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./Resources/Images/Week2/Proclamation.jpg" style="width: auto; height:500px">
+          <div class="text">Proclamation of the Irish Republic </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./Resources/Images/Week2/Rising.jpg" style="width: auto; height:500px">
+          <div class="text">William Paget Depiction of the GPO</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./Resources/Images/Week2/PearseFarrell.jpg" style="width: auto; height:500px">
+          <div class="text">Surrender of Patrick Pearse and Elizabeth O'Farrell</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
 
     <h3>Videos</h3>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/C4Vvf7IdkuY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -64,12 +95,40 @@
     <br>
     <a href = "https://samaka-messi.tumblr.com/post/87042567460/quitting-the-bars-paula-meehan-quittings">Quitting the Bars by Paula Meehan</a>
     <br>
-     <a href= "http://www.favoritepoem.org/">Favorite Poem Website</a>   
+    <a href= "https://terrancehayes.com/about/">About Terrace Hayes</a>
+    <br>
+    <a href= "http://www.favoritepoem.org/">Favorite Poem Website</a>   
+    <br>
+    <a href = "https://www.smith.edu/academics/poetry-center/eavan-boland">About Eavan Boland</a>
+    <br>
+    <a href = "https://www.pprproject.org/about-ppr">About Participation and the Practice of Rights</a>
     <h3>Music</h3>
     <iframe src="https://open.spotify.com/embed/artist/4sD9znwiVFx9cgRPZ42aQ1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe src="https://open.spotify.com/embed/track/1FYk1qx5WLSrbtg7JUobkB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe src="https://open.spotify.com/embed/playlist/31cFXH7xVl3rI7jAmQ9caS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://open.spotify.com/embed/playlist/3TkvqABruxQ6uUOPoFZcWe" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 </body>
 <footer>
         
 </footer>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
